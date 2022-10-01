@@ -23,7 +23,7 @@ async function createConnection(){
 export const client = await createConnection();
 
 app.get("/", (req, res) => {
-  res.send(`"front_end":""`);
+  res.send(`"front_end":"https://react-markdown-md.netlify.app/"`);
 });
 
 app.use('/files',filesRouter);
